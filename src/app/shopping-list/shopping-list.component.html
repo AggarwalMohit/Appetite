@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-edit 
+        (ItemDelete)="onItemDelete()" (ItemClear)="onItemClear()"></app-shopping-edit>
+            <hr>
+            <ul class="list-group">
+                <span *ngFor="let igr of ingredients">
+                <a class="list-group-item" style="cursor:pointer">
+                {{igr.name}}({{igr.amount}})
+                </a>
+            </span>
+            </ul>
+
+    </div>
+</div>
